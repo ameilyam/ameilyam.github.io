@@ -1,3 +1,136 @@
-h1{
-    color: purple;
+body {
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0; /* Align to the right */
+  width: 100%;
+  background-color: #AA5E31;
+  padding: 10px; /* Optional: Add padding for spacing */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right; /* Align the content (icons) to the right */
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.section {
+  padding: 50px;
+  /* Add styling for each section */
+}
+
+/* Styling for the home section with a background image */
+.home {
+  background-image: url('minimalDesk.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
+  background-size: cover; /* Adjust the background size to cover width and adjust height */
+  background-repeat: no-repeat; /* Prevent repetition of the background */
+  background-position: center; /* Center the background image */
+  color: white; /* Set text color to be visible on the background image */
+  height: 90%;
+}
+
+.name {
+  font-family: 'Oswald', sans-serif; /* Use Oswald font */
+  font-weight: 500; /* Use a medium weight (500 is a common value for medium) */
+  font-size: 50px; /* Set the font size to 40 pixels */
+  color: #323931;
+  padding-left: 10%;
+  padding-top: 10%;
+  margin-bottom: 0;
+}
+
+.job-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #AA5E31;
+  padding-left: 10%;
+  padding-top: 5px;
+  margin-top: 0;
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap; /* Prevent wrapping of text */
+}
+
+/* Styling for the About Me section */
+#about-me {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.about-me-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: #AA5E31;
+}
+
+.about-me-content {
+  overflow: hidden; /* Clear the floats */
+}
+
+.about-me-photo {
+  float: left;
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.about-me-photo img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid #AA5E31;
+}
+
+.about-me-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #323931;
+  text-align: left;
+}
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 550px) {
+  .home {
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent repetition of the background */
+    height:50%
+  }
+
+  .name {
+    font-size: 25px; /* Adjust the font size for smaller screens */
+  }
+
+  .job-title {
+    font-size: 15px;
+  }
+
+  .about-me-photo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-me-text {
+    font-size: 13px;
+  }
 }
